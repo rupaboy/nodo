@@ -1,0 +1,18 @@
+ body {
+  padding-top:1.2em;
+    background-image: url("./images/featured.jpg");
+    background-repeat:repeat-y;
+    background-position: center;
+    background-size:cover;
+  }
+
+  h2 {padding-top:.8em;}
+
+
+  @media (max-width: 350px) {
+    body {background-image: none;}
+  }
+
+  @media (min-width: 1720px) {
+    body {background-image: none;}
+  }

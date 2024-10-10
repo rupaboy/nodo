@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJOO Paris 2024</title>
+</head>
+<body>
+    
+    <!--NODO TECNOLÓGICO TP Nº2 ____ ALUMNO: Pais, Fernando_________________________________-->
+    <!--ENCABEZADO _________________________________________________________________________-->
+    <div>
+        <img alt="Logo JJOO Paris 2024" src="https://static.sportytrader.com/content/new/1-MX-TIPSTERS/picto-paris-2024.webp">
+
+        <!--NAV BAR-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="infografia.html">Infografía</a>
+            <a href="delegacion_argentina.html">Argentina</a>
+            <a href="medallero.html">Medallero</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <!--CONTENIDO DE NOTICIA ___________________________________________________________________-->
+    <p>
+        <strong>Contáctenos</strong>
+    </p>
+  
+  <!--TITULO PRINCIPAL _________________________________________________________________________-->
+    <h1>Contacto y sugerencias</h1>
+
+<!--PARRAFO 1-->
+    <p>
+        ¿Querés comentarnos algo para mejorar nuestro sitio web?
+        Todo lo que nos sugieras nos ayudará a trabajar con más
+        ímpetu para ofrecerte una web cada vez mejor
+    </p>
+
+<!--SUBTITULO-->
+<h3>Llena nuestro formulario de contacto</h3>
+
+<!--FORMULARIO _______________________________________ -->
+
+<form method="post" action="#">
+  
+    <p>
+        <strong>Nombre completo:</strong><br>
+        <input
+            name="nombre"
+            type="text"
+            placeholder="Juan Pérez"
+            size="50"
+            required
+        >
+    </p>
+
+    <p>
+        <strong>Edad:</strong><br>
+        <input
+            name="edad"
+            type="number"
+            min="18"
+            size="3"
+            required
+        >
+    </p>
+
+    <p>
+        <strong>Género:</strong><br>
+        <input name="sex" type="radio" required>Hombre</input>
+        <input name="sex" type="radio" required>Mujer</input>
+    </p>
+
+    <p>
+        <strong>Sugerencia/Comentario</strong><br>
+        <textarea></textarea>
+    </p>
+    
+    <!--BOTONES DE SUBMIT Y RESET-->
+    <button type="submit"><strong>Enviar</strong></button>
+    <button type="reset"><strong>Borrar</strong></button>
+
+</form>
+
+    <!--finaliza FORM-->
+
+</body>
+
+
+<!-- INICIA HOJA DE ESTILOS __________________________________________ -->
+<style>
+
+/* Estilos de Formularios */
+form {
+    background-color:lightskyblue;
+    width: 90%;
+    margin:auto;
+    padding:1em;
+}
+
+/* Más altura para las cajas de input */
+input {
+    height:2em;
+}
+
+/* Botónes: fondo rojo, texto blanco,
+    padding arriba-abajo de 1em y costados de 2em
+    Radio de Borde 5px para suavizar las esquinas
+    Y borde de caja no definida */
+button {
+    background-color:seagreen;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border:none;
+}
+
+/* El último de los botones tendrá fondo rojo */
+button:last-child {
+    background-color:darkred;
+}
+
+/* Ancho y Alto para el "textarea" de sugerencias
+    Max y min de altura para que quede fijo. */
+textarea {
+    width:32em;
+    min-height:11em;
+    max-width: 90%;
+    max-height: 11em;
+}
+
+
+/*  BODY: Sans Serif en toda la página como se pidió en el ejercicio.
+    Salto de línea automático (para trabajar a media pantalla)
+    Márgen al final del cuerpo de página -embellecedores */
+body {
+   font-family: sans-serif;
+   text-wrap:wrap;
+   margin-bottom: 3em;
+}
+
+/* Centrado de elementos y color de fondo */
+div {
+    background-color: #000;
+    text-align: center;
+}
+
+/* padding exterior del Nav y color de fondo */
+nav {
+    background-color: #0563a7;
+    padding:15px;
+}
+
+/* color, formato y padding de hipervínculos del Nav */
+nav a:hover {
+    color:cyan;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+}
+
+nav a:active {
+    color:powderblue;
+}
+
+/* Ancho máximo de imágenes al 100% */
+/* En el ejercicio se pide {width: 100%;}, pero el consiguiente
+"height" proporcional entorpecería la visualización del encabezado. */
+img {
+    max-width: 100%;
+}
+
+/* Epígrafes: Formato de texto y color de fondo */
+figcaption {
+    text-align: center;
+    background-color: #0563a7;
+    color: white;
+}
+
+/* Aquí SÍ se aplica el 100% de ancho de imágen, pero sólo en las imágenes hijas de "figure" */
+figure img {
+    width: 100%;
+}
+
+/* ESTILOS DE H3 comentados para esta página
+h3 {
+    background: #0563a7;
+    color: white;
+    width:40%;
+}
+*/
+    
+</style>
+<!-- TERMINA HOJA DE ESTILOS __________________________________________ -->
+        
+</html>

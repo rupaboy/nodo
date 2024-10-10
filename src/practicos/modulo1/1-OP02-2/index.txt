@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica clase 5</title>
+  </head>
+
+  <body>
+
+    <h5><a href="/src/class05mod1.html">Notas de la clase 5</a></h5>
+
+    <h1>Sobre José de Espronceda</h1>
+
+    <img src="images/jose_de_espronceda.jpg" title="Blanca de Borbón, 1870" alt="José de Espronceda">
+    <blockquote>
+      <em>
+        Los años ¡ay! de la ilusión pasaron; <br>
+        Las dulces esperanzas que trajeron, <br>
+        con sus blancos ensueños se llevaron, <br>
+        y el porvenir de oscuridad vistieron; <br>
+        las rosas del amor se marchitaron, <br>
+        las flores en abrojos convirtieron, <br>
+        y de afán tanto y tan soñada gloria <br>
+        sólo quedó una tumba, una memoria. <br>
+      </em>
+    
+    </blockquote>
+    <br>
+    <h5>José de Espronceda</h5>
+
+    <p>
+      Figura fundamental <strong>del primer romanticismo
+      español</strong>.
+      Autor que vivió el turbulento periodo histórico
+      y político del siglo XIX, comprometido con sus ideas
+      como demuestra la memoria colectiva de algunas de sus
+      poesías, con la exaltación de la libertad en la
+      <em>Canción del Pirata</em>, publicada por primera vez
+      en la revista El Artista.
+    </p>
+
+    <p>
+      Marcado por la
+      <abbr title="Contiendas civiles a lo largo  del siglo XIX">guerra carlista</abbr>
+      , la desamortización de Mendizábal y las sublevaciones
+      militares de 1837, ese mismo año empieza a publicar
+      por fragmentos una de sus obras más importantes
+      
+      <strong><em>El estudiante de Salamanca.</em></strong>
+    </p>
+    <p>
+      Sus obras más importantes son:<br>
+
+      <ul>
+        <li>Canción del Pirata - 1835</li>
+        <li>El estudiante de Salamanca - 1840</li>
+        <li>El diablo mundo</li>
+        <li>La pata de palo</li>
+        <li>El pelayo</li>
+      </ul>
+      En 1870 publica Blanca de Borbón,
+      una tragedia neoclásica que expone sus ideas
+      sobre el gobierno.</p>
+      <br>
+
+      <h5><a href="https://www.cervantesvirtual.com/portales/jose_de_espronceda/">CervantesVirtual.com</a></h5>
+
+
+</body>    
+  <style>
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:#292622;
+  text-wrap: wrap;
+  color:#a8a7a4;
+}
+a {
+  color:#aa7f47;
+}
+
+h1 {
+  padding-bottom: .2em;
+  border-bottom: 1px solid #999;
+  border-color: orange;
+  color:#CCC;
+}
+
+ul {
+  background-color: #393632;
+  color: #CCC;
+}
+
+h5 {
+  text-align: right;
+  padding-bottom: .2em;
+}
+
+img {
+  position: absolute;
+  flex-wrap: wrap;
+}
+
+blockquote {
+  text-align: right;
+  font-style: oblique;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-weight: 800;
+  position: relative;
+  flex-wrap: wrap;
+  left: 30%;
+  width: 19em;
+  color:#1d2525;
+  background-color: #bc8f8fab;
+  padding: 1em;
+}
+
+  </style>
+
+<!--Finalizan estílos CSS____________________________________________-->
+
+</html>

@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/gesta_iso.svg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greda Propiedades</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css" >
+  </head>
+  
+  <!-- INICIA BODY -->
+  <body id="index" class="
+    overflow-x-hidden  bg-[#233] overflow-y-visible">
+
+    <!-- STICKY NAV -->
+    <nav class="
+      sticky top-0 z-40 drop-shadow-lg min-w-[440px]">
+      <ul class="border-b border-[#122] px-3 pt-2 text-xs gap-4 text-amber-50 absolute bg-[#233] grid w-full grid-cols-[6fr_6rem_6rem_6rem] text-center justify-around items-end">
+      
+          <!-- LOGO DE PORTADA -->      
+        <a href="#">
+          <img class="
+            h-7 pb-2" src="../src/img/logo-h.svg" alt="Logo">
+        </a>     
+        <a href="../index.html">
+          <li class="
+            py-2 bg-[#122] rounded-t-xl hover:bg-emerald-200 hover:bg-opacity-15 transition-colors hover:animate-pulse text-center">Inicio</li>
+        </a>
+        <a href="institucional.html">
+          <li class="
+            py-2 bg-[#122] rounded-t-xl hover:bg-emerald-200 hover:bg-opacity-15 transition-colors hover:animate-pulse text-center">Institucional</li>
+        </a>
+        <a href="gestion.html">
+          <li class="
+            py-2 bg-[#122] rounded-t-xl hover:bg-emerald-200 hover:bg-opacity-15 transition-colors hover:animate-pulse text-center">Gestión</li>
+        </a>
+      </ul>
+    </nav>
+
+    <!-- ESTA SECCIÓN ES GRID-COLS-2 Y CONTIENE NAV VERT Y ARTICULOS -->
+    <section class="
+      grid grid-cols-[196px_1fr] min-h-svh w-full pt-[41px]">
+
+      <!-- NAV VERTICAL - FILTROS -->
+      <div>
+        <nav id="navvertical" class="
+           px-2 bg-[#233] text-sm grid justify-center items-center">
+            <form action="propiedades.html" method="get" class="
+              leading-6 font-light gap-1 my-2 grid grid-cols-2 text-amber-50">
+           
+              
+              <!-- UBICACION -->
+              <header class="
+                  ed-t-md  bg-[#122] text-xs text-center col-span-2">Ubicación</header>
+
+              <fieldset class="
+                col-span-2">
+                <input id="catamarca" type="radio" name="provincia" class="
+                   hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="catamarca">Provincia de Catamarca</label>
+                <select id="dcatamarca" name="departamento" class="
+                  mt-3 font-semibold w-full col-span-2 text-[#122] text-center rounded bg-amber-50"><option value="ambato">Ambato</option><option value="ancasti">Ancasti</option><option value="andalgalá">Andalgalá</option><option value="antofagasta_de_la_sierra">Antofagasta de la Sierra</option><option value="belén">Belén</option><option value="capayán">Capayán</option><option value="capital">Capital</option><option value="el_alto">El Alto</option><option value="fray_mamerto_esquiú">Fray Mamerto Esquiú</option><option value="la_paz">La Paz</option><option value="paclín">Paclín</option><option value="pomán">Pomán</option><option value="santa_maría">Santa María</option><option value="santa_rosa">Santa Rosa</option><option value="tinogasta">Tinogasta</option><option value="valle_viejo">Valle Viejo</option></select>
+              </fieldset>
+
+              <fieldset class="
+                col-span-2">
+                <input id="larioja" type="radio" name="provincia" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="larioja">Provincia de La Rioja</label>
+                <select id="dlarioja" name="departamento" class="
+                  mt-3 font-semibold col-span-2 w-full text-[#122] text-center rounded bg-amber-50"><option value="capital">Capital</option><option value="aimogasta">Aimogasta</option><option value="chamical">Chamical</option><option value="chepes">Chepes</option><option value="villa_union">Villa Unión</option><option value="villa_castelli">Villa Castelli</option><option value="catuna">Catuna</option><option value="ulapes">Ulapes</option><option value="san_blash">San Blas D. L. S.</option><option value="villa_mazan">Villa Mazán</option><option value="machigasta">Machigasta</option><option value="patquia">Patquía</option><option value="villa_santa_rita">V. Santa Rita de Catuna</option><option value="villa_nueva">Villa Nueva</option><option value="talampaya">Talampaya</option><option value="paganzo">Paganzo</option><option value="famatina">Famatina</option><option value="santa_rosa">Santa Rosa</option><option value="anjullon">Anjullón</option><option value="aminga">Aminga</option></select>
+              </fieldset>
+
+              <!-- ESTADO -->
+              <header class="
+                  rounded-t-md bg-[#122] text-xs text-center col-span-2">Estado</header>
+
+              <fieldset>
+                <input id="alquiler" type="radio" name="contrato" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="alquiler">En Alquiler</label>
+              </fieldset>
+
+              <fieldset>
+                <input id="venta" type="radio" name="contrato" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="venta">En Venta</label>
+              </fieldset>
+
+              <fieldset>
+                <input id="alquilada" type="radio" name="contrato" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="alquilada">Alquilada</label>
+              </fieldset>
+
+              <fieldset>
+                <input id="disponible" type="radio" name="contrato" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="disponible">Inactiva</label>
+              </fieldset>
+
+              <!-- DURACIÓN -->
+              <header class="
+                  rounded-t-md bg-[#122] text-xs text-center col-span-2">Duración</header>
+              <fieldset>
+                <input id="menosde6" type="radio" name="menosde6" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="menosde6">&lt; 6 meses</label>
+              </fieldset>
+
+              <fieldset>
+                <input id="masde6" type="radio" name="masde6" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="masde6">&gt; 6 meses</label>
+              </fieldset>
+
+
+              <!-- TIPO -->
+              <header class="
+                  rounded-t-md bg-[#122] text-xs text-center col-span-2">Tipo</header>
+
+              <select name="tipo" class="
+                font-semibold col-span-2 text-[#122] text-center rounded bg-amber-50"><option>Casa</option><option>Departamento</option><option>Oficina</option><option>Comercio</option><option>Terreno</option><option>Salón</option></select>
+
+
+              <!-- AMBIENTES -->
+              <header class="
+                  rounded-t-md bg-[#122] text-xs text-center col-span-2">Ambientes</header>
+
+              <fieldset>
+                <input type="number" name="dormitorios" class="
+                  w-8 rounded text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="dormitorios"> Cuartos</label>
+              </fieldset>
+
+              <fieldset>                
+                <input type="number" name="banios" class="
+                  w-8 rounded text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="banios"> Baños</label>
+              </fieldset>
+
+              <fieldset>
+                <input type="number" name="garage" class="
+                  w-8 rounded text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="garage"> Garage</label>
+              </fieldset>
+
+              <fieldset>
+                <input type="checkbox" id="pileta" name="piscina" class="
+                  w-8 rounded text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="pileta"> Piscina</label>
+              </fieldset>
+            
+
+               <!-- CONDICION -->
+              <header class="
+                  rounded-t-md bg-[#122] text-xs text-center col-span-2">Condición</header>     
+
+              <fieldset>
+                <input id="usada" type="radio" name="condicion" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="usada">Usada</label>
+              </fieldset>
+
+              <fieldset>
+                <input id="estrenar" type="radio" name="condicion" class="
+                  hover:animate-pulse text-[#122] font-normal">
+                <label class="text-xs px-1 select-none" for="estrenar">A Estrenar</label>
+              </fieldset>
+
+
+                <!-- PRECIO -->
+              <header class="
+                  rounded-t-md bg-[#122] text-xs text-center col-span-2">Precio</header>
+
+                <fieldset class="
+                  col-span-2">
+                  <input type="number" name="preciomin" class="
+                     w-16 rounded text-[#122] font-normal">
+                  <label class="text-xs px-1 select-none" for="preciomin">Precio Mínimo</label>
+                </fieldset>
+
+                <fieldset class="
+                  col-span-2">
+                  <input type="number" name="preciomax" class="
+                     w-16 rounded text-[#122] font-normal">
+                  <label class="text-xs px-1 select-none" for="preciomax">Precio Máximo</label>
+                </fieldset>
+
+                <header class="
+                  rounded-t-md bg-[#122] text-xs text-center col-span-2">Usuario</header>
+                <fieldset class="col-span-2">
+                  <input type="checkbox" id="userfilter" name="mis_propiedades" class="
+                    w-8 rounded text-[#122] font-normal">
+                  <label class="text-xs px-1 select-none" for="userfilter">Mis propiedades</label>
+                </fieldset>
+
+
+                <!-- BOTONES -->
+              
+                <button type="reset" class="
+                  text-xs text-amber-50 bg-red-950 p-1 rounded">Reiniciar</button>
+                
+                <button type="submit" class="
+                  text-xs text-amber-50 bg-blue-950 p-1 rounded">Filtrar</button>
+                
+              
+              <button onclick="event.preventDefault();" class="
+                  col-span-2 text-xs text-amber-50 underline p-1 rounded">Otras opciones de búsqueda</button>
+              
+          </form>
+        </nav>
+      </div>      
+      
+      <!-- MAIN PARA ARTICULOS -->
+      <main class="
+        bg-[#122] grid p-2 items-start">
+          <section class="
+            flex gap-2 flex-wrap"> 
+       
+
+
+
+
+ <!-- \/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v EMPIEZAN LOS ARTÍCULOS \/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v\/v^v -->
+            
+          <!-- INICIA ART 0 -->   
+            <article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+              snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+              <div class="
+                grid grid-cols-5">          
+                <header class="
+                  col-span-5 overflow-hidden">
+                  <div class="
+                    max-h-24">
+
+                    <!-- FOTO DE LA PROPIEDAD vvv -->
+                    <img src="./gestion/user_robledo_jorge/inmueble_001/001.jpg" class="
+                      object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+                  </div>
+                  <div class="
+                    relative bottom-[44px]"><div class="
+                      absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+                  
+                </header>
+                <div class="
+                  relative left-26 bottom-12 col-span-5">
+                  <h3 class="
+                    absolute ml-1 px-1 italic bg-fuchsia-900 rounded font-semibold">
+                    
+                    En Venta</h3>   <!-- EnAlquiler,EnVenta,Alquilada,Inactiva --> 
+                  <h3 class="
+                    absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold">
+                    
+                    15.000 <sup>u$s</sup></h3> <!-- PRECIO lleva <sup> en la divisa-->
+
+                </div> 
+                  <div class="
+                    col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+                    <h4 class="
+                      text-right pr-2 text-xs italic">
+                      
+                      Nueva Coneta</h4>
+
+                    <h4 class="
+                      text-right pr-2 text-md font-extrabold">
+                      
+                      Calle s/n Nº21</h4>
+
+                  </div>
+          
+                  <!-- ICONOS -->          
+                  <figure class="
+                  col-span-6 grid-cols-2 grid
+                  ">
+                    <img class="
+                      w-5 mx-auto" src="./img/lote.svg" alt="T:">      <!-- TIPO DE INMUEBLE -->
+                    
+                    <img class="
+                      h-5 mx-auto" src="./img/catamarca.svg" alt="C.P"> <!-- SVG PROVINCIA -->
+        
+          
+                  <p class="">          Terreno</p> <!-- C:CASA D:DEPTO O:OFICINA L:LOCAL T:TERRENO S:SALÓN -->
+                  <p class="">
+                    
+                    4700
+                  
+                  </p> <!-- C.P LOCALIDAD -->
+                    <!-- DESCRIPCIÓN -->
+                  </figure>
+                <footer class="
+                  mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+
+                  800 m<sup>2</sup>. Terreno amplio, ideal para residencial o comercial.
+
+                </footer>
+          
+              </div>
+            </article><!-- FINAL ART 0 -->
+
+<!-- INICIA ART 1 -->   
+<article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+  snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+  <div class="
+    grid grid-cols-5">          
+    <header class="
+      col-span-5 overflow-hidden">
+      <div class="
+        max-h-24">
+        <img src="./gestion/admin_greda/inmueble_001/001.jpg" class="
+          object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+      </div>
+      <div class="
+        relative bottom-[44px]">
+        <div class="
+          absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+      </div>
+    </header>
+    <div class="
+      relative left-26 bottom-12 col-span-5">
+      <h3 class="
+        absolute ml-1 px-1 italic bg-green-900 rounded font-semibold">
+        
+        En Alquiler</h3>  
+
+      <h3 class="
+        absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold">
+        
+        200.000 <sup>
+          
+          AR$</sup></h3>
+          
+    </div>
+    <div class="
+      col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+      <h4 class="
+        text-right pr-2 text-xs italic">Chilecito</h4>
+      <h4 class="
+        text-right pr-2 text-md font-extrabold">La Paz 456</h4>
+    </div>
+    <img class="
+      w-5 mx-auto" src="./img/casa.svg" alt="C:"> 
+    <img class="
+      h-6 mx-auto" src="./img/dorm.svg" alt="D:"> 
+    <img class="
+      w-5 mx-auto" src="./img/bath.svg" alt="B:"> 
+    <img class="
+      w-5 mx-auto" src="./img/gara.svg" alt="G:"> 
+    <img class="
+      h-5 mx-auto" src="./img/la_rioja.svg" alt="C.P"> 
+    <p class="">
+      
+      Casa</p> 
+
+    <p class="">
+      
+      2</p> 
+
+    <p class="">
+      
+      1</p> 
+
+    <p class="">
+      
+      1</p> 
+
+    <p class="">
+      
+      5360</p> 
+
+    <footer class="
+      mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+
+      Casa cómoda en barrio tranquilo, ideal para familia pequeña.
+
+    </footer>
+  </div>
+</article>
+<!-- FINAL ART 1 -->
+
+<!-- INICIA ART 2 -->   
+<article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+  snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+  <div class="
+    grid grid-cols-5">          
+    <header class="
+      col-span-5 overflow-hidden">
+      <div class="
+        max-h-24">
+        <img src="./gestion/admin_greda/inmueble_002/002.jpg"  class="
+          object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+      </div>
+      <div class="
+        relative bottom-[44px]">
+        <div class="
+          absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+      </div>
+    </header>
+    <div class="
+      relative left-26 bottom-12 col-span-5">
+      <h3 class="
+        absolute ml-1 px-1 italic bg-fuchsia-900 rounded font-semibold">
+        
+        En Venta</h3>  
+
+      <h3 class="
+        absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold">
+        
+        120.000 <sup>
+          
+          u$s</sup></h3>
+          
+    </div>
+    <div class="
+      col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+      <h4 class="
+        text-right pr-2 text-xs italic">
+        
+        San Fernando del Valle</h4>
+
+      <h4 class="
+        text-right pr-2 text-md font-extrabold">
+        
+        Primo de Rivera 789
+      
+      </h4>
+    </div>
+    <img class="
+      w-5 mx-auto" src="./img/casa.svg" alt="C:"> 
+    <img class="
+      h-6 mx-auto" src="./img/dorm.svg" alt="D:"> 
+    <img class="
+      h-5 mx-auto" src="./img/bath.svg" alt="B:"> 
+    <img class="
+      w-5 mx-auto" src="./img/gara.svg" alt="G:"> 
+    <img class="
+      h-5 mx-auto" src="./img/catamarca.svg" alt="C.P"> 
+    <p class="">
+    
+      Casa
+    
+    </p> 
+    <p class="">
+    
+      4
+    
+    </p> 
+    <p class="">
+    
+      3
+    
+    </p> 
+    <p class="">
+    
+      2
+    
+    </p> 
+    <p class="">
+    
+      4700
+    
+    </p> 
+    <footer class="
+      mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+
+      Amplia casa de dos plantas con patio y piscina, lista para ...
+
+    </footer>
+  </div>
+</article>
+<!-- FINAL ART 2 -->
+
+<!-- INICIA ART 3 -->   
+<article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+  snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+  <div class="
+    grid grid-cols-5">          
+    <header class="
+      col-span-5 overflow-hidden">
+      <div class="
+        max-h-24">
+        <img src="./gestion/admin_greda/inmueble_003/003.jpg" class="
+          object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+      </div>
+      <div class="
+        relative bottom-[44px]">
+        <div class="
+          absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+      </div>
+    </header>
+    <div class="
+      relative left-26 bottom-12 col-span-5">
+      <h3 class="
+        absolute ml-1 px-1 italic bg-yellow-900 rounded font-semibold">
+        
+        Alquilada</h3>  
+
+      <h3 class="
+        absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold">
+        
+        63.000 <sup>AR$</sup></h3>
+
+    </div>
+    <div class="
+      col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+      <h4 class="
+        text-right pr-2 text-xs italic">
+        
+        San Fernando del Valle</h4>
+
+      <h4 class="
+        text-right pr-2 text-md font-extrabold">
+        
+        General Navarro 821</h4>
+
+    </div>
+    <figure class="col-span-5 grid grid-cols-4">
+      <img class="
+        w-5 mx-auto" src="./img/dept.svg" alt="D:">
+      <img class="
+        h-6 mx-auto" src="./img/dorm.svg" alt="D:">
+      <img class="
+        h-5 mx-auto" src="./img/bath.svg" alt="B:">
+      <img class="
+        h-5 mx-auto" src="./img/catamarca.svg" alt="C.P">
+      <p class="">
+      
+        Depto</p>
+      <p class="">
+      
+        1</p>
+      <p class="">
+      
+        1</p>
+      <p class="">
+      
+        4700</p>
+    </figure>
+
+    <footer class="
+      mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+      
+      Departamento luminoso. Estudiantes o profesionales.
+
+    </footer>
+  </div>
+</article>
+<!-- FINAL ART 3 -->
+
+
+
+
+<!-- INICIA ART 4 -->   
+<article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+  snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+  <div class="
+    grid grid-cols-5">          
+    <header class="
+      col-span-5 overflow-hidden">
+      <div class="
+        max-h-24">
+        <img src="./gestion/admin_greda/inmueble_004/004.jpg" class="
+          object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+      </div>
+      <div class="
+        relative bottom-[44px]">
+        <div class="
+          absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+      </div>
+    </header>
+    <div class="
+      relative left-26 bottom-12 col-span-5">
+      <h3 class="
+        absolute ml-1 px-1 italic bg-green-900 rounded font-semibold">
+        
+        En Alquiler</h3>
+
+      <h3 class="
+        absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold">
+        
+        370.000 <sup>
+          
+          AR$</sup></h3>
+          
+    </div>
+    <div class="
+      col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+      <h4 class="
+        text-right pr-2 text-xs italic">
+        
+        La Rioja
+      
+      </h4>
+      <h4 class="
+        text-right pr-2 text-md font-extrabold">
+        
+        Av. San Nicolás 678
+      
+      </h4>
+    </div>
+
+    <figure class="col-span-5 grid grid-cols-4">
+      <img class="
+        w-5 mx-auto" src="./img/dept.svg" alt="D:">
+      <img class="
+        h-6 mx-auto" src="./img/dorm.svg" alt="D:">
+      <img class="
+        h-5 mx-auto" src="./img/bath.svg" alt="B:">
+      <img class="
+        h-5 mx-auto" src="./img/la_rioja.svg" alt="C.P">
+        
+        <p class="">
+      
+          Depto</p> 
+    
+        <p class="">
+          
+          2</p> 
+    
+        <p class="">
+          
+          1</p> 
+    
+    
+        <p class="">
+          
+          5300</p> 
+    </figure>
+
+
+    <footer class="
+      mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+
+      Departamento céntrico con vista y acceso a comercios.
+
+    </footer>
+  </div>
+</article>
+<!-- FINAL ART 4 -->
+
+
+
+<!-- INICIA ART 5 -->   
+<article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+  snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+  <div class="
+    grid grid-cols-5">          
+    <header class="
+      col-span-5 overflow-hidden">
+      <div class="
+        max-h-24">
+        <img src="./gestion/admin_greda/inmueble_005/005.jpg" class="
+          object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+      </div>
+      <div class="
+        relative bottom-[44px]">
+        <div class="
+          absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+      </div>
+    </header>
+    <div class="
+      relative left-26 bottom-12 col-span-5">
+      <h3 class="
+        absolute ml-1 px-1 italic bg-yellow-900 rounded font-semibold">
+        
+        Alquilada</h3>  
+
+      <h3 class="
+        absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold"
+        
+        >60.000 <sup>
+          
+          AR$</sup></h3>
+          
+    </div>
+    <div class="
+      col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+      <h4 class="
+        text-right pr-2 text-xs italic">
+        
+        San Fernando del Valle</h4>
+
+      <h4 class="
+        text-right pr-2 text-md font-extrabold">
+        
+        Gilberto Gil 111</h4>
+
+    </div>
+    <figure class="col-span-5 grid grid-cols-4">
+      <img class="
+        w-5 mx-auto" src="./img/sala.svg" alt="S:">
+      <img class="
+        h-5 mx-auto" src="./img/bath.svg" alt="B:">
+      <img class="
+        w-5 mx-auto" src="./img/gara.svg" alt="G:">
+      <img class="
+        h-5 mx-auto" src="./img/catamarca.svg" alt="C.P">
+      <p class="">
+      
+        Salón</p>
+      <p class="">
+      
+        2</p>
+      <p class="">
+      
+        2</p>
+      <p class="">
+      
+        4700
+      </p>
+    </figure>
+    <footer class="
+      mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+
+      Salón de eventos con cocina equipada, perfecto para celebraciones familiares.
+
+    </footer>
+  </div>
+</article>
+<!-- FINAL ART 5 -->
+
+
+
+<!-- INICIA ART 6 -->   
+<article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+  snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+  <div class="
+    grid grid-cols-5">          
+    <header class="
+      col-span-5 overflow-hidden">
+      <div class="
+        max-h-24">
+        <img src="./gestion/admin_greda/inmueble_006/006.jpg" class="
+          object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+      </div>
+      <div class="
+        relative bottom-[44px]">
+        <div class="
+          absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+      </div>
+    </header>
+    <div class="
+      relative left-26 bottom-12 col-span-5">
+      <h3 class="
+        absolute ml-1 px-1 italic bg-fuchsia-900 rounded font-semibold">
+        
+        En Venta</h3>  
+
+      <h3 class="
+        absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold"
+        
+        >60.000 <sup>
+          
+          u$s</sup></h3>
+          
+    </div>
+    <div class="
+      col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+      <h4 class="
+        text-right pr-2 text-xs italic">
+        
+        La Rioja</h4>
+
+      <h4 class="
+        text-right pr-2 text-md font-extrabold">
+        
+        Concejal Salva 254</h4>
+
+    </div>
+    <img class="
+      w-5 mx-auto" src="./img/casa.svg" alt="C:"> 
+    <img class="
+      h-6 mx-auto" src="./img/dorm.svg" alt="D:"> 
+    <img class="
+      h-5 mx-auto" src="./img/bath.svg" alt="B:"> 
+    <img class="
+      w-5 mx-auto" src="./img/gara.svg" alt="G:"> 
+    <img class="
+      h-5 mx-auto" src="./img/la_rioja.svg" alt="C.P"> 
+    <p class="">
+      
+      Casa</p> 
+
+    <p class="">
+      
+      3</p> 
+
+    <p class="">
+      
+      2</p> 
+
+    <p class="">
+      
+      2</p> 
+
+    <p class="">
+      
+      5400</p> 
+
+    <footer class="
+      mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+
+      Casa amplia con jardín, patio, amoblada, zona tranquila.
+
+    </footer>
+  </div>
+</article>
+<!-- FINAL ART 6 -->
+
+
+
+<!-- INICIA ART 7 -->   
+<article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+  snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+  <div class="
+    grid grid-cols-5">          
+    <header class="
+      col-span-5 overflow-hidden">
+      <div class="
+        max-h-24">
+        <img src="./gestion/admin_greda/inmueble_007/007.jpg" class="
+          object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+      </div>
+      <div class="
+        relative bottom-[44px]">
+        <div class="
+          absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+      </div>
+    </header>
+    <div class="
+      relative left-26 bottom-12 col-span-5">
+      <h3 class="
+        absolute ml-1 px-1 italic bg-green-900 rounded font-semibold">
+        
+        En Alquiler</h3>  
+
+      <h3 class="
+        absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold"
+        
+        >80.000 <sup>
+          
+          AR$</sup></h3>
+          
+    </div>
+    <div class="
+      col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+      <h4 class="
+        text-right pr-2 text-xs italic">
+        
+        San Fernando del Valle</h4>
+
+      <h4 class="
+        text-right pr-2 text-md font-extrabold">
+        
+        Emilia Haynes 721</h4>
+
+    </div>
+    <figure class="col-span-5 grid grid-cols-4">
+      <img class="
+        w-5 mx-auto" src="./img/ofic.svg" alt="O:">
+      <img class="
+        w-5 mx-auto" src="./img/bath.svg" alt="B:">
+      <img class="
+        h-5 mx-auto" src="./img/gara.svg" alt="G:">
+      <img class="
+        h-5 mx-auto" src="./img/catamarca.svg" alt="C.P">
+      <p class="">
+      
+        Oficina</p>
+      <p class="">
+      
+        1</p>
+      <p class="">
+      
+        1</p>
+      <p class="">
+      
+        4700</p>
+    </figure>
+
+    <footer class="
+      mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+
+      Oficina c/cocina en zona comercial, ideal consultorios.
+
+    </footer>
+  </div>
+</article>
+<!-- FINAL ART 7 -->
+
+<!-- INICIA ART 8 -->   
+<article title="Ver más" class="cursor-pointer hover:bg-emerald-200 hover:bg-opacity-15 transition-colors
+  snap-center w-52 h-[20em] max-h-[20em] text-amber-50 text-center text-sm bg-[#233] rounded-lg p-2"> 
+  <div class="
+    grid grid-cols-5">          
+    <header class="
+      col-span-5 overflow-hidden">
+      <div class="
+        max-h-24">
+        <img src="./gestion/admin_greda/inmueble_008/008.jpg" class="
+          object-bottom h-24 object-cover w-full rounded-t" alt="Foto de Propiedad">
+      </div>
+      <div class="
+        relative bottom-[44px]">
+        <div class="
+          absolute w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[192px] border-r-transparent border-b-[44px] border-b-[#122]"></div>
+      </div>
+    </header>
+    <div class="
+      relative left-26 bottom-12 col-span-5">
+      <h3 class="
+        absolute ml-1 px-1 italic bg-slate-700 rounded font-semibold">
+        
+        Inactiva</h3>  
+
+      <h3 class="
+        absolute top-5 ml-2 w-max max-w-40 max-h-[1.3em] overflow-y-hidden px-1 text-2xl italic font-extrabold">
+        
+        400.000 <sup>
+          
+          AR$</sup></h3>
+          
+    </div>
+    <div class="
+      col-span-5 mb-2 h-12 bg-[#122] rounded-b-sm">
+      <h4 class="
+        text-right pr-2 text-xs italic">
+        
+        La Rioja</h4>
+
+      <h4 class="
+        text-right pr-2 text-md font-extrabold">
+        
+        Calle 9 de Julio 456</h4>
+
+    </div>
+    <img class="
+      w-5 mx-auto" src="./img/shop.svg" alt="L:"> 
+    <img class="
+      invisible w-6 mx-auto" src="./img/dorm.svg" alt="D:"> 
+    <img class="
+      w-5 mx-auto" src="./img/bath.svg" alt="B:"> 
+    <img class="
+      invisible h-5 mx-auto" src="./img/gara.svg" alt="G:"> 
+    <img class="
+      h-5 mx-auto" src="./img/la_rioja.svg" alt="C.P"> 
+    <p class="">
+      
+      Local</p> 
+
+    <p class="invisible">
+      
+      0</p> 
+
+    <p class="">
+      
+      1</p> 
+
+    <p class="invisible">
+      
+      1</p> 
+
+    <p class="">
+      
+      5300</p> 
+
+    <footer class="
+      mt-2 text-xs col-span-5 max-h-8 overflow-hidden text-ellipsis">
+
+      Local comercial en importante esquina, excelente visibilidad.
+
+    </footer>
+  </div>
+</article>
+<!-- FINAL ART 8 -->
+
+
+
+
+                                        <!-- FINALIZAN LOS ARTÍCULOS -->
+          </section>
+
+      </main>
+      
+    </section>
+
+  </body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJOO Paris 2024</title>
+</head>
+<body>
+    <!--NODO TECNOLÓGICO TP Nº2 ____ ALUMNO: Pais, Fernando_________________________________-->
+    <!--ENCABEZADO _________________________________________________________________________-->
+    
+    <div>
+        <img alt="Logo JJOO Paris 2024" src="https://static.sportytrader.com/content/new/1-MX-TIPSTERS/picto-paris-2024.webp">
+
+        <!--NAV BAR-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="infografia.html">Infografía</a>
+            <a href="delegacion_argentina.html">Argentina</a>
+            <a href="medallero.html">Medallero</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <!--CONTENIDO DE NOTICIA ___________________________________________________________________-->
+    <p>
+        <strong>Inicio</strong> - <em>13 agosto de 2024</em>
+    </p>
+  
+  <!--TITULO PRINCIPAL _________________________________________________________________________-->
+    <h1>Los Juegos Olímpicos le dijeron adiós a París 2024</h1>
+    
+    <!--PARRAFO 1-->
+    <p>
+        Se terminaron los <strong>Juegos Olímpicos de París
+        2024</strong> con una enorme fiesta en el Stade de
+        France y el mundo del olimpismo ya mira con ansiedad
+        y expectativa hacia <strong>Los Ángeles 2028</strong>.
+        Como cada vez que un ciclo o un proceso llega a su
+        fin, es momento de hacer balances.
+    </p>
+    
+    <!--PARRAFO 2-->
+    <p>
+        De un Stade de France convertido en un mundo
+        apocalíptico, rodeado de humo, en el que los
+        Juegos Olímpicos habían dejado de existir, a
+        un estadio dominado por la música a todo
+        volumen. Del tradicional desfile de las
+        banderas y el ingreso de las delegaciones
+        saludando al público al caos que generaron los
+        propios atletas cuando decidieron copar el
+        escenario sin permiso mientras comenzaban a
+        tocar la banda Phoenix, acompañada de otros
+        artistas. De los tradicionales discursos de
+        protocolo al broche de oro a <strong>Tom Cruise</strong>
+        arrojándose desde el techo para llevarse la
+        bandera olímpica rumbo a Los Ángeles 2028.
+        De todo tuvo una noche larga y llena de
+        emociones en la que París le ganó el telón a
+        sus Juegos Olímpicos.
+    </p>
+
+    <!--FOTOGRAFIA _________________________________________________________________________-->
+    <figure>
+        <img alt="Cierre JJOO 2024" src="https://pulsonoticias.com.ar/wp-content/uploads/2024/08/CLAUSURA-2.jpeg">
+        
+        <!--EPÍGRAFE-->
+        <figcaption>
+            <small>Cierre majestuoso de los JJOO 2024 France</small>
+        </figcaption>
+    </figure>
+
+    <!--PARRAFO 3-->
+    <p>
+    
+        El cierre en el Stade de France tuvo como protagonista
+        al nadador francés Léon Marchand, que al inicio de las
+        noche había aparecido tomando una llama del pebetero
+        en el <strong>Jardín de las Tullerías</strong>.
+        El ídolo local ingresó con el fuego olímpico y junto
+        a Thomas Bach, presidente del COI, la boxeadora Cindy
+        Ngamba, el luchador cubano Mijaín López, la jugadora
+        de tenis de mesa china Sun Yingsha, el maratonista
+        keniato Eliud Kipchoge, el judoca francés Teddy
+        Riner y la nadadora australiana Emma McKeon lo
+        apagaron de un soplido, cerrando oficialmente
+        París 2024.
+    
+    </p>
+
+</body>
+
+
+
+<!-- INICIA HOJA DE ESTILOS __________________________________________ -->
+<style>
+
+/*  Sans Serif en toda la página como se pidió en el ejercicio.
+    Salto de línea automático (para trabajar a media pantalla)
+    Márgen al final del cuerpo de página -embellecedores */
+body {
+   font-family: sans-serif;
+   text-wrap:wrap;
+   margin-bottom: 3em;
+}
+
+/* Centrado de elementos y color de fondo */
+div {
+    background-color: #000;
+    text-align: center;
+}
+
+/* padding exterior del Nav y color de fondo */
+nav {
+    background-color: #0563a7;
+    padding:15px;
+}
+
+/* color, formato y padding de hipervínculos del Nav */
+nav a:hover {
+    color:cyan;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+}
+
+nav a:active {
+    color:powderblue;
+}
+
+/* Ancho máximo de imágenes al 100% */
+/* En el ejercicio se pide {width: 100%;}, pero el consiguiente
+"height" proporcional entorpecería la visualización del encabezado. */
+img {
+    max-width: 100%;
+}
+
+/* Epígrafes: Formato de texto y color de fondo */
+figcaption {
+    text-align: center;
+    background-color: #0563a7;
+    color: white;
+}
+
+/* Aquí SÍ se aplica el 100% de ancho de imágen, pero sólo en las imágenes hijas de "figure" */
+figure img {
+    width: 100%;
+}
+
+/* Sub-título para "EN RESUMEN" y "EL MEDALLERO" */
+h3 {
+    background: #0563a7;
+    color: white;
+    width:40%;
+}
+
+
+</style>
+<!-- TERMINA HOJA DE ESTILOS __________________________________________ -->
+
+</html>

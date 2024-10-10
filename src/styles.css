@@ -1,0 +1,879 @@
+
+* {
+  scroll-behavior:smooth;
+}
+
+/*SECCIONES FLEXIBLES */
+
+#sec2,#sec3,#sec4 section{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:.2em;
+  justify-content:space-evenly;
+}
+
+
+/*SECCIONES DE BLOQUE */
+
+.widesection {
+  max-width:80vw;
+  margin-top:1em;
+}
+
+/* ARTICULOS 40% ancho */
+
+.index, .articleRaw {
+  border: none;
+  filter: none;
+  background-color:initial;
+  line-height: 1.3;
+  filter: drop-shadow(1px 1px #06374e88);
+  padding-bottom: .8em;
+  margin: 1em 1em .4em 1em;
+  width: 78vw;
+  max-width: 500px;
+  min-width: 200px;
+}
+
+.articleRaw, .index p:first-child {
+  text-indent:.4em;
+}
+
+.articleCard {
+  margin: 1em;
+  padding: .1em .1em;
+  line-height: 1.3;
+  color: #9df;
+  user-select:none;
+  width: 78vw;
+  max-width: 500px;
+  min-width: 200px;
+  border: 2px solid #0132;
+  border-radius: .4em;
+  background-color:#269a;
+  filter: drop-shadow(0px 0px 2px #000a);
+}
+
+ 
+.articleCard tr:first-child {
+  font-weight: 900;
+  color:#5cf;
+}
+
+.articleCard hr {
+  max-width: 90%;
+  filter:blur(1px);
+  margin-top:.1em;
+  margin-bottom:.1em;
+  border-color: #5fb1e144;
+}
+
+.articleRaw li {
+  font-weight: 900;
+  color:#bcd;
+  list-style: none;
+  text-align: right;
+  margin-bottom: .4em;
+}
+
+.articleRaw p {
+  margin: .1em .1em;
+  font-weight: 600;
+}
+
+.articleRaw em {
+  color:#9df;
+  font-size: normal;
+}
+
+
+/* ARTICULOS 75% ANCHO*/
+
+
+
+
+/* NAV BAR EN SECCION 100% */
+
+.subNav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2.8em;
+  text-align: center;
+  width: 100%;
+  margin-bottom:.8em;
+  z-index: 800;
+  background-color: #135;
+  border-top: 1px solid #9df3;
+  border-bottom: 2px solid #0126;
+  line-height: 3;
+  user-select: none;
+}
+
+
+/* ENLACES EN EL NAV BAR WIDESECTION */
+.subNav nav a {
+  border-left:8px solid #146c94;
+  color:#bcd;
+  text-transform:capitalize;
+  font-weight: 400;
+  margin: 0em .1em;
+  padding: .1em .6em;
+  border-right: 1px solid #0123;
+}
+
+.subNav nav a:hover {
+  border-left:8px solid #9df;
+  color: #5fb1e1;
+}
+
+.subNav nav a:active {
+  border-left:8px solid #bcd;
+  color: #0b5070;
+}
+
+.subNav nav a:target {
+  border-left:8px solid #00ade0;
+  color: #146c94;
+}
+
+
+/* ENCABEZADO DE TITULO */
+
+.pagetitle {
+  padding-top:.5em; /*sobresalir de NavBar*/
+  filter: drop-shadow(0px 1px #146b94cc);
+}
+
+.pagetitle h2 {
+  line-height: 5em;
+}
+
+/* TITULO c/FONDO P-SECUNDARIAS */
+
+.titleheader {
+  background-image: url(../images/featured.jpg);
+  background-position: center;
+  width:100%;
+  background-repeat: repeat-x;
+  color: #bcd;
+  user-select: none;
+}
+
+h1.maintitle {
+  margin-bottom:0em;
+}
+
+/* FORMATO DE ENLACES __________________*/
+
+.canales a:hover {
+  border:unset;
+}
+
+.widesection .canales img {
+  margin: auto;
+  width: 2em;
+  padding-top: 1em;
+  position: relative;
+}
+
+
+.canales a {
+  border:none;
+  margin-bottom: 2em;
+}
+
+.canales {
+display: flex;
+flex-direction: column;
+text-align: center;
+max-width: 40vw;
+border: 1px solid #1356;
+outline: 2px solid #0245;
+padding: .8em 1.4em;
+}
+
+.canales h2 {
+  margin-top:-0.2em;
+  margin-bottom:-1.5em;
+}
+
+a.okn {
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+  color:#5fb1e1;
+  border-left:8px solid #146c94;
+  padding-left:4px;
+  padding-right:8px;
+  line-height: 1;
+  filter: drop-shadow(1px 2px #0352);
+}
+
+a:active {
+  color:#5fb1e1;
+  border-left:8px solid #5fb1e1;
+}
+
+a:hover {
+  border-left:8px solid #9df;
+  color: #00ade0;
+}
+
+/*TABLAS para cajas de color.*/
+
+.table2x2 {
+  margin:auto;
+  text-align: center;
+  border-collapse: collapse;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0em auto 1em auto;
+  min-width: 100%;
+}
+
+.table2x2 td {
+  text-align: center;
+  padding: .2em .2em;
+}
+
+.table2x2:last-child {
+  margin-bottom: 1em;
+}
+
+section .tablesection {
+  user-select: none;
+}
+
+.tablesection th:first-child {
+  width: 4vw;
+  background-color: #0003;
+  outline: 2px solid #9df1;
+  border-radius: 1.5em .4em .4em 1.5em;
+  padding-left: 1em;
+  padding-right:.8em;
+}
+
+.tablesection th:last-child {
+  width: 4vw;
+}
+
+.tablesection tr:nth-child(3) a {
+border-bottom-right-radius: 1.5em;
+}
+
+.tablesection tr:nth-child(1) a {
+  border-top-right-radius: 1.5em;
+}
+
+.tablesection td {
+  text-align: center;
+}
+
+.tablesection td:nth-child(2) strong {
+  color: #bcd;
+}
+
+.tablesection th a {
+  display:block;
+  text-align: left;
+  min-width: 4em;
+  max-width: 4em;
+  padding:.2em 1em .2em .4em;
+  outline-offset: 1px;
+  outline: 1px solid #9df6;
+  background-color: #0122;
+}
+
+.tablesection th a:hover {
+  color:#9dfc;
+  background-color: #00ade044;
+}
+
+.tablesection table {
+  line-height: 1.2;
+  background-color:#147a;
+  border-radius: 2.1em;
+  padding:.4em;
+  width:80vw;
+  border: 2px solid #0132;
+  margin: 2px 0px;
+  filter: drop-shadow(0px 0px 2px #000a);
+  margin-top: 1.5em;
+}
+
+.tablesection th h4 {
+  background-color: unset;
+  border-radius: unset;
+  color:#00ade0;
+  text-align:right;
+  max-width: 4em;
+  padding-right: .4em;
+  margin:0;
+}
+
+.extra table, .extra .table4x4, .extra details[open] {
+  background-color: #0425;
+}
+
+.practico table, .practico .table4x4, .practico details[open] {
+  background-color: #5145;
+}
+
+
+
+
+/* tablas SUMARIOS______________________ */
+
+.tablesection details p {
+  margin-top:.2em;
+  line-height: 1.5;
+  color:#9df;
+  font-weight: 500;
+  font-size: small;
+  user-select: text;
+}
+
+.tablesection details em {
+  color:#00ade0;
+  font-weight: 400;
+  font-size: medium;
+  text-transform: lowercase;
+  user-select: text;
+}
+
+.tablesection details hr {
+  margin: 1.4em 3em 1.2em 3em;
+}
+
+.tablesection summary {
+  font-family:monospace;
+  font-weight: 900;
+  text-align: center;
+  background-color: #2695;
+  padding:.5em;
+  border-radius: .4em .4em 2em 2em;
+  outline: 1px solid #0125;
+  width: 70vw;
+  margin:0em auto 0em auto;
+  font-size: small;
+}
+
+.tablesection details {
+  color:#0000;
+  border-top:.2em solid #0125;
+  background-color: #012a;
+  border-radius: .2em .2em 1.6em 1.6em;
+  outline: 1px solid #0123;
+}
+
+.tablesection details:hover {
+  background-color: #00ade0;
+}
+
+.tablesection details[open] {
+  color:#9dfe;
+  background-color: #0128;
+  border-radius: .2em .2em 1.6em 1.6em;
+  padding-bottom: 1em;
+}
+
+.tablesection details[open]:hover {
+  color:#9df;
+  background-color: #012c;
+}
+
+.tablesection details summary {
+  background-color: unset;
+  outline: none;
+  cursor:row-resize;
+}
+
+.tablesection details[open] summary {
+  background-color: unset;
+  outline: none;
+}
+
+.tablesection details[open] summary:hover {
+  color:#fff;
+  text-decoration: underline;
+  user-select: none;
+}
+
+.tablesection details img {
+  height: 15vh;
+  opacity: 60%;
+}
+
+
+
+td {
+padding: 0em 1em 0em 1em;
+}
+
+li {
+list-style-image: url('../images/list-style-dot.png');
+}
+
+ul {
+  padding-left:0;
+}
+
+/* ESTILOS DE FORMATO DE TEXTO ______________________________*/
+
+/* HEADLINES */
+
+h1 {
+  font-size: 2em;
+  text-transform:capitalize;
+  padding: 0em;
+  line-height: 1.5em;
+  color: #bcd;
+  text-align: left;
+  margin-left:1.4em;
+  z-index: 1000;
+  filter: drop-shadow(1px 1px #258);
+  font-style: oblique;
+}
+
+h2 {
+  text-align: center;
+  text-transform:uppercase;
+  line-height:1.4em;
+  font-size: 1.2em;
+  color:#5fb1e1;
+  filter: blur(1px);
+  opacity:80%;
+  user-select: none;
+}
+
+h3 {
+  margin: 0em 0em .3em 0em; 
+  font-size: 1.2em;
+  font-weight: 800;
+  font-style: italic;
+  text-transform:capitalize;
+  line-height: .8em;
+  text-align: right;
+  color:#5fb1e1;
+  border-bottom: 1px solid #146c94;
+  background-color:initial;
+  filter: drop-shadow(1px 1px #258)
+}
+
+h4 {
+  font-size: 1em;
+  text-transform:capitalize;
+  text-align: center;
+  color:#eff;
+  background-color:#135;
+  margin-top: 0px;
+  margin-bottom:1em;
+  border-radius: .2em;
+  filter: drop-shadow(0px -3px 2px #9df3);
+  min-width: 4em;
+}
+
+
+p {
+  font-size: smaller;
+  line-height: 1.2em;
+  margin-top:.2em;
+  margin-right:1em;
+  margin-left:1em;
+}
+
+footer p { /* párrafos en el pie de paǵina */
+padding: 0em -1em 0em -1em; /*Márgenes izq y der*/
+filter: drop-shadow(1px 2px black);
+}
+
+em {
+  color:#5fb1e1;
+}
+
+strong {
+  color:#9df;
+}
+
+hr {
+  margin-bottom:2.3em;
+  border: 1px solid #035;
+  opacity: 40%;
+  filter: drop-shadow(0px 2px #0245);
+}
+
+
+/* LETRA CAPITULAR */
+
+article.index p::first-letter, article.canales p::first-letter {
+  font-size:x-large;
+  font-weight: 600;
+  color:#bcd;
+}
+
+
+/* INICIA HEADER ______________________________*/
+
+
+/*Abajo: Elementos comunes */
+
+header {
+  display: flex;
+  min-height: 44px;
+  max-height: 44px;
+  position: fixed;
+  top:0px;
+  background-image: linear-gradient(#eff, #bcd);
+  opacity: 96%;
+  border-bottom: 3px solid #024a;
+  width: 100%;
+  z-index: 1000;
+  filter:drop-shadow(0px 3px #0123)
+}
+
+/* LOGO DEL HEADER */
+header #logo {
+  user-select: none;
+  height: 41px;
+  width: 120px;
+  left: 2%;
+  filter: drop-shadow(0px 1px #146b94cc);
+  background-image: url('../images/logo-nodo-s.png');
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  margin-left: 0.6em;
+}
+
+.anchor {
+  scroll-margin-top: 7em; /* Ajusta el tamaño del offset según la altura de tu navbar */
+}
+
+.anchorb {
+  scroll-margin-top: 33em; /* Ajusta el tamaño del offset según la altura de tu navbar */
+}
+
+/* INICIA MENU NAVEGACION ______________________________*/
+header nav {
+  justify-content:left;
+  padding: .5em;
+}
+
+header nav a {
+  color: #135;
+  filter: drop-shadow(0px 0px 2px #3ace);
+}
+
+#menuicon {
+  filter: drop-shadow(1px 1px #146b9488);
+}
+
+header summary {
+
+  position: fixed;
+  right: 3%;
+  user-select: none;
+  display: inline-flex;
+  background-image: url('../images/menu-aqua.png');
+  margin-top:4px;
+  width: 25px;
+  height: 20px;
+}
+
+header summary::marker {
+  display:none;
+}
+
+header details {
+  padding-right: 0.6em;
+  position: fixed;
+  right: 8%;
+  user-select: none;
+}
+
+header details[open] summary {
+  filter:blur(1px);
+  background-image: url('../images/menu-lightblue.png');
+}
+
+
+/* INICIA BODY ______________________________*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding:0;
+}
+
+/* DECORACION EN PRIMER DIV */
+
+#topleft-trace {
+  background-image: url('../images/element-trace.png');
+  opacity: 36%;
+  position: absolute;
+  transform: rotateY(180deg);
+  margin-top:4em;
+  z-index: 300;
+  width: 150px;
+  height: 150px;
+}
+
+/* BODY PEGAJOZO */
+.content {
+  flex:1;
+  margin: 0em 0em 0em 0em;
+  min-height: calc(100vh - 8.3em);
+  min-width: 240px;
+  background-image: url(/images/element-trace.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* FOOTER PEGAJOZO */
+
+footer {
+  border-top-left-radius: 8em;
+  border-top-right-radius: 8em;
+  position:relative;
+  margin-top: 1em;
+  padding: 3.5em 4em 3.5em 4em;
+  border-top:2px solid #146c9428;
+  background-image: linear-gradient(#024, #1354 );
+  display: flex;
+  text-align: center;
+  color: #9dfc;
+  font-size: small;
+  font-weight: 300;
+  z-index: 1100;
+  filter: blur(1px);
+  margin-right:10%;
+  margin-left: 10%;
+  min-width: 150px;
+}
+
+footer:hover {
+  filter:unset;
+}
+
+
+/* INICIAN MEDIA QUERY ______________________________*/
+
+/* PANTALLAS MEDIANAS DE ANCHURA */
+@media (max-width: 720px) {
+  
+  body {
+    font-size: small;
+    margin-top:1em;
+  }
+  
+  header nav a {
+    line-height: 2.5;
+    font-size:small;
+  }
+  td {
+    font-size: small;
+    padding: .2em;
+  }
+  
+  .tablesection h4 {
+    font-size: small;
+  }
+
+  footer {
+    font-size: smaller;
+  }
+
+  .subNav {
+    top:3.5em;
+  }
+}
+
+/* PANTALLAS CHICAS DE ANCHURA */
+@media (max-width: 430px) {
+  
+  body {
+    font-size: small;
+    margin-top:.4em;
+  }
+
+  td {
+    font-size: smaller;
+  }
+
+  #logo {
+    visibility: hidden;
+  }
+
+  a {
+    font-size:inherit;
+  }
+
+  .ptitle {
+    margin-top:2em;
+    font-size: smaller;
+  }
+
+  header summary {
+    background-image: url('../images/iso-nodo.png');
+    }
+  
+  header details[open] summary {
+    background-image: url('../images/iso-nodo-hover.png');
+  }
+
+  .tablesection {
+    font-size:smaller;
+  }
+}
+/* PANTALLAS ANGOSTAS DE ANCHURA*/
+@media (max-width: 350px) {
+
+  header details[open] {
+    display:flex;
+    margin-right: 1.3em;
+    width: 8em;
+    line-height: 0.6em;
+    background-image: linear-gradient(#eff, #bcd);
+    opacity: 90%;
+    padding:0.1em;
+    border-bottom: 3px solid #5fb1e1;
+    border-left: 3px solid #5fb1e1;
+  }
+
+p {
+  margin-right: 1em;
+}
+
+.table2x2 {
+  font-size: xx-small;
+}
+
+body {
+  background-image:none;
+}
+}
+
+@media (max-width: 280px) {
+
+  .titleheader {
+    background-image: none;
+  }
+}
+
+/* PANTALLAS "GRANDES" DE ANCHO */
+
+@media (min-width: 1720px) {
+
+  body section {
+    font-size:x-large;
+}
+
+  .index, .articleRaw {
+    max-width: 720px;
+    
+}
+
+  .articleCard {
+    max-width: 720px;
+}
+
+  .articleCard {
+    max-height: none;
+}
+
+}
+
+
+@media (min-width: 2400px) {
+
+  body section {
+    font-size:xx-large;
+}
+
+  .index, .articleRaw {
+    max-width: 1100px;
+}
+
+  .articleCard {
+    max-height: none;
+    max-width: 1100px;
+  }
+
+}
+
+/* PANTALLAS ENANAS O VOLTEADAS */ 
+
+
+
+@media (max-height: 500px) {
+  
+  .widesection,.tablesection {
+    margin-left:4em;
+  }
+
+  td {
+    font-size: small;
+  }
+}
+
+
+/* INICIA UN KIT DE STYLING PARA SCROLLBARS ______________________________*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #135;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #258;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00ade0;
+}
+/* FINALIZA SCROLLBAR STYLING KIT */
+
+
+/* PACK DE COMPATIBILIDAD ______________________________*/
+
+/* Fallback STICKY NAV para navegadores antiguos */
+@supports not (position: sticky) {
+  .navbar {
+      position: fixed;
+      top: 3em;
+      width: 100%;
+      z-index: 1000;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: linear-gradient(#024, #135 );
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+  font-size:1em;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style:normal;
+
+  overflow:scroll;
+}

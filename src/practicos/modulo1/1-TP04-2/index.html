@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/gesta_iso.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greda Propiedades</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="./css/styles.css" >
+
+  </head>
+  
+  <!-- INICIA BODY -->
+  <body id="index" class="snap-mandatory overflow-y-scroll overflow-x-hidden">
+
+
+    <!-- STICKY NAV -->
+    <nav class="drop-shadow-lg sticky top-0 z-40">
+      <ul class="border-b border-[#122] px-3 pt-2 text-xs gap-4 text-amber-50 absolute bg-[#233] grid w-full grid-cols-[6fr_6rem_6rem_6rem] text-center justify-around items-end">
+      
+          <!-- LOGO DE PORTADA -->
+        <a href="#">
+          <img class="h-7 pb-2" src="./src/img/logo-h.svg" alt="Logo">
+        </a>     
+        <a href="./src/institucional.html">
+          <li class="py-2 bg-[#122] rounded-t-xl  hover:bg-emerald-200 hover:bg-opacity-15 transition-colors hover:animate-pulse text-center">Institucional</li>
+        </a>
+        <a href="./src/gestion.html">
+          <li class="py-2 bg-[#122] rounded-t-xl  hover:bg-emerald-200 hover:bg-opacity-15 transition-colors hover:animate-pulse text-center">Gestión</li>
+        </a>
+        <a href="./src/propiedades.html">
+          <li class="py-2 bg-[#122] rounded-t-xl  hover:bg-emerald-200 hover:bg-opacity-15 transition-colors hover:animate-pulse text-center">Propiedades</li>
+        </a>
+      </ul>
+    </nav>
+
+
+
+    <!-- TRIANGULO FOOTER ABSOLUTE EN ASIDE 1 -->
+    <footer id="footer-triangle" class="absolute bottom-0 left-0 w-[100vw] h-0 border-l-[0vw] border-l-transparent border-r-[100vw] border-r-transparent border-b-[10svw] border-b-[#122]"></footer>
+
+      <!-- PRIMER VISTA 100 SVH -->
+      <div style="background-image: url('./src/img/portada.jpeg');">
+        <aside style="background-image: linear-gradient(to bottom, #420, #0000 80%);"
+            class="bg-cover mx-auto flex flex-wrap items-center justify-evenly snap-center h-svh bg-center bg-no-repeat">
+        
+        
+                    <!-- CARD 1 -->
+                <main class="relative max-w-[440px] w-[440px]">
+        
+                  <div class="mt-6 text-xs text-amber-50 min-h-[13em] mx-6 items-center justify-center flex-col flex gap-3">
+                    <h1 class="text-center drop-shadow-[0_3px_3px_#000c] text-amber-50 text-2xl md:text-3xl pb-2 border-b border-amber-50">
+                      ¿Buscás tu propio lugar?
+                    </h1>
+                    <p class="text-amber-50 text-center md:text-sm px-2 drop-shadow-[0_3px_3px_#000c]">En nuestros índices podés encontrar una lista de inmuebles gestionados por nuestras <em>sucursales</em> de <strong>La Rioja y Catamarca</strong></p>
+                    <!-- FORM CARD 1 -->
+                    <form action="./src/propiedades.html" method="get">
+                        <section class="mb-1 gap-1 flex-row flex">
+                          <input name="busqueda" placeholder="Localidad, Barrio o Calle" class="focus:animate-pulse w-60 rounded focus:outline-none text-yellow-900 text-center">
+                          <button class="text-amber-50 bg-yellow-900 p-2 w-16 rounded">Buscar</button>
+                        </section>
+                        <section class="flex-row flex justify-center">
+                          <p class="text-center text-amber-50">Buscar en: <select name="provincia" class="focus:animate-pulse text-[#122] bg-white rounded px-4 mx-2" name="provincia" id="rango"><option>Catamarca</option><option>La Rioja</option></select></p>
+                        </section>
+                      </form>
+                  </div>
+                </main>
+        
+                <!-- CARD 2 -->
+                <main class="bg-[#122] relative min-w-[440px] w-[440px] mt-8">
+        
+                  <!-- TRIANGULO HEADER CARD 2 -->
+                  <header class="absolute bottom-[15em] w-[0px] h-0 border-r-[0px] border-l-transparent border-l-[440px] border-r-transparent border-b-[44px] border-b-[#122]"></header>
+        
+                      <div class="text-xs text-amber-50 h-[20em] mx-6 items-center justify-center flex-col flex gap-3">
+                            <h1 class="text-center text-amber-50 text-2xl md:text-3xl drop-shadow-[0_3px_3px_#000c] pb-2 border-b border-amber-50">
+                            ¡Gestioná tus propiedades!
+                          </h1>
+                          <p class="text-amber-50 text-center md:text-sm drop-shadow-[0_3px_3px_#000c]">Ahora puedes gestionar todos tus contratos de locación, alquiler y venta de propiedades desde el sitio. <br><strong>¡Es muy fácil!</strong>.</p>
+                          <!-- FORM CARD 2 -->
+                          <form action="./src/gestion.html" class="flex gap-1">
+                            <input placeholder="Teléfono" name="telefono" type="number" class="focus:animate-pulse w-32 rounded focus:outline-none text-yellow-900 text-center">
+                            <input placeholder="Clave" name="clave" type="text" class="focus:animate-pulse w-24 rounded focus:outline-none text-yellow-900 text-center">
+                            <button type="submit" class="text-amber-50 bg-yellow-900 p-2 w-20 rounded">Ingresar</button>
+                          </form>
+                          <a target="self" href="./src/gestion.html">
+                            <p class="text-center text-amber-50">¿No estás registrado?</p>
+                          </a>
+                    </div>
+                </main>
+        </aside>
+      </div>
+
+      <!-- SEGUNDA VISTA 100 SVH -->
+      <aside id="menu" class="snap-center w-svw h-svh bg-[#122] flex flex-col items-center justify-center mx-auto">
+
+    
+      <!-- CARD 3 -->
+      <section class="flex mt-2 sm:mt-4 md:mt-8 xl:mt-20 flex-wrap items-center justify-center gap-6">
+        <main id="nav" class="h-60 px-12 bg-[#233] items-center justify-evenly flex relative max-w-[440px] min-w-[440px]">
+        
+          <!-- TRIANGULO HEADER CARD 3 -->
+          <header class="absolute bottom-[15em] w-[0px] h-0 border-l-[0px] border-l-transparent border-r-[440px] border-r-transparent border-b-[44px] border-b-[#233]"></header>
+
+          
+            <ul class="font-extralight text-right text-amber-50 border-r border-[#122] leading-loose pr-4">
+            
+              <li>Alquiler</li>
+              <li>Compra/Venta</li>
+              <li>Mantenimiento</li>
+              <li>Tasaciones</li>
+              <li>Asesoría</li>
+
+            </ul>
+          
+
+        <!-- LOGO DE SERVICIOS -->
+          <section id="logo-b" class="flex-col flex items-center justify-around ml-16">
+            <img class="h-28" src="./src/img/logo-v.svg" alt="Logo">
+            <p class="text-sm text-[#122] font-bold text-center">Propiedades</p>
+          </section>
+
+        </main>
+
+      
+        <footer>
+          <section class="text-amber-50 text-sm grid grid-cols-2 gap-2 max-w-[640px]">
+
+            <p class="tracking-widest mx-3 p-1 rounded-t-lg font-semibold text-[#122] text-center bg-amber-50">CATAMARCA</p>
+            <p class="tracking-widest mx-3 p-1 rounded-t-lg font-semibold text-[#122] text-center bg-amber-50">LA RIOJA</p>
+          </section>
+
+          <section class="grid gap-1">
+            <article class="text-amber-50 text-center grid grid-cols-[9rem_2rem_9rem] p-2 bg-[#233] rounded-lg">
+              <em class="text-center mr-2">3834-584002</em>
+              <img class="m-auto h-6" src="./src/img/whatsapp.svg" alt="logo">
+              <em class="text-center ml-2">3804-723591</em>
+            </article>
+            <article class="text-amber-50 text-center grid grid-cols-[9rem_2rem_9rem] p-2 bg-[#233] rounded-lg">
+              <em class="text-center mr-2">República 727</em>
+              <img class="m-auto h-6" src="./src/img/facebook_places.svg" alt="logo">
+              <em class="text-center ml-2">Belgrano 446</em>
+            </article>
+            <article class="text-amber-50 text-center grid grid-cols-[9rem_2rem_9rem] p-2 bg-[#233] rounded-lg">
+              <em class="text-center mr-2">/okgreda</em>
+              <img class="m-auto h-6" src="./src/img/facebook_alt.svg" alt="logo">
+              <em class="text-center ml-2">/greda_lr</em>
+            </article>
+          </section>
+        </footer>
+
+          
+      <article class="w-full">
+        <p class="max-w-[320px] p-1 border-[#233] border mx-auto text-xs text-amber-50 text-center">
+          © Greda. Todos los derechos reservados. <br>
+          La empresa no se responsabiliza por el mal uso de los datos de usuarios en caso de extravío de claves.
+        </p>
+      </article>
+    </aside>
+
+  </body>
+
+</html>

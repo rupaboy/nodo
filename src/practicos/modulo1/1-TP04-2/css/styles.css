@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    :root {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        min-width: 440px;
+    }
+
+    body {
+        min-width: 440px;
+    }
+
+    #dcatamarca {
+        display:none;
+    }
+
+    #catamarca:checked ~ #dcatamarca {
+        display:block;
+    }
+
+    #dlarioja {
+        display:none;
+    }
+
+    #larioja:checked ~ #dlarioja {
+        display:block;
+    }
+
+
+
+        /* QUITAR SCROLL SNAP y FLECHAS en diposición menor a 640px de altura*/
+    @media (max-height: 640px) {
+            aside {
+                min-height: 640px;
+                }
+            :root {
+                  scroll-snap-type:none;
+                }
+            #footer-triangle {
+                  display:none;
+                }
+            #navvertical {
+                position:relative;
+         
+                align-items:start;
+                margin-top: 1em;
+                font-size: x-small;
+                gap:0;
+            }
+            #navvertical form header {
+                height: 1em;
+            }
+         }
+
+        }

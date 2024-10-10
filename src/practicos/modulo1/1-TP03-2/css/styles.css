@@ -1,0 +1,418 @@
+/* MOD 1 TP Nº3 COH 2 - PAIS, FERNANDO */
+
+* {
+    /* CAJA: RESET DEFAULTS */
+    margin:0;
+    padding:0;
+}
+
+body {
+
+    /* CONTENIDO */
+    scroll-behavior:smooth;
+
+    /* CAJA: ANCHO MÍNIMO HASTA SCROLLBAR X */
+    min-width: 120px;  /* ESCALABLE HASTA SMART WATCH */
+    overflow-x: hidden;
+
+    /* TEXTOS */
+    color: #535353;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.color-w {
+    /* TEXTOS: COLOR WHITE*/
+    color:white;
+}
+
+.color-b {
+    /* TEXTOS: COLOR BLACK */
+    color:black;
+}
+
+/* INICIAN SELECTORES DEL HEADER PRINCIPAL Y NAV _____________________________ */
+section header {
+    /* CONTENIDO */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* CAJA */
+    width: calc(100svw - 2px);
+    min-height: 68px;
+    position:absolute; /* PERMITE ALINEAR VERTICALMENTE #PORTADA SIN PERDER FONDO */
+    z-index: 1;
+
+    /* ESTILOS */
+    background-color: #0004;
+    border: 1px solid white;
+
+    /* TEXTOS */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+.header-logo {
+    /* TEXTOS */
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size:4ch;
+    padding: 0 .4em;
+    user-select: none;
+}
+
+.header-logo span {
+    /* TEXTO: "FORNITURE" EN LOGO */
+    color:#8abb17;
+}
+
+nav ul {
+    /* CONTENIDO */
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2em;
+    
+    /* TEXTOS */
+    font-weight: 500;
+    list-style: none;
+    line-height: 1.5;
+}
+
+nav a {
+    /* CAJA */
+    padding:.3em;
+
+    /* TEXTOS */
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* TEXTOS */
+    color: #f9d006;
+    text-decoration: underline;
+}
+
+/* INICIAN SELECTORES DE LA PORTADA PRINCIPAL _____________________________ */
+
+#portada {
+    /* CONTENIDO */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ALINEAC. VERT DE PORTADA */
+
+    /* CAJA */
+    width: 100vw;
+    min-height:100vh;
+
+    /* ESTILOS */
+    background-image: url(../img/img-portada.jpg);
+    background-position: left top;
+    background-size: cover;
+    filter: brightness(.8);
+}
+
+#portada article div {
+    /* CAJA */
+    padding:2em 0em;
+
+    /* CONTENIDO */
+    display:flex;
+    flex-direction: column;
+    }
+
+#portada div h1 {
+    /* CAJA */
+    padding: 3em .4em 1em .4em;
+    
+    /* ESTILOS */
+    text-shadow: 2px 2px 4px #000e;
+
+    /* TEXTOS */
+    font-size: 3em;
+    font-weight: 200;
+    text-align: center;
+    }
+
+#portada div p {
+    /* CAJA */
+    margin:auto;
+    padding: 1em;
+    max-width: 50ch;
+
+    /* ESTILOS */
+    background-color: #0007;
+    text-shadow: 2px 2px 3px #000a;
+}
+
+#portada strong {
+    /* TEXTOS */
+    font-weight: 800;
+}
+
+/* TODOS LOS BOTONES DENTRO DE UN DIV _____________________________ */
+div button, .content button {
+    /* CAJA */
+    margin: 4em auto;
+    padding: 1em;
+    min-width: 100px ;
+
+    /* CONTENIDO */
+    display:block;
+
+    /* ESTILOS */
+    border: none;
+    border-radius: 1em;
+    background-color: #6b9a00bb;
+    
+    /* TEXTOS */
+    color: white;
+}
+
+div button:hover {
+    /* ESTILOS */
+    color: black;
+    background-color: #f9d006;
+}
+
+a {
+    /* TEXTOS */
+    text-decoration: none;
+}
+
+/* CLASE PRINCIPAL PARA LOS CONTENEDORES DE SECCIÓN ___________________________ */
+.container {
+    /* CAJA */
+    padding:1em 4vw;
+    min-height: 100vh;
+
+    /* CONTENIDO */
+    align-content:center;  /* CENTRADO VERTICAL DE CONTENIDOS */
+}
+
+/* MAIN FLEXIBLE CON LA CLASE CONTAINER ___________________________ */
+.container main {
+    /* CONTENIDO */
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+
+.container strong {
+    /* TEXTOS */
+    font-weight: 800;
+}
+
+/* ENCABEZADOS PARA ANIDAR ÍCONO + TÍTULO EN SECCIONES CLASE CONTAINER _____ */
+.container header {
+    /* CONTENIDO */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+/* ÍCONOS DE TÍTULO PARA SECCIONES DE CLASE CONTAINER ______________________ */
+.content-icon {
+    /* CAJA */
+    height: 60px;
+    width: 60px;
+
+    /* ESTILOS */
+    background-color: #8abb17;
+    border-radius: 100%;
+}
+
+/* TITULOS PARA LAS SECCIONES DE CLASE CONTAINER ___________________________ */
+.content-title {
+    /* CAJA */
+    padding: 0em .5em;
+
+    /* TEXTOS */
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1;
+}
+
+/* TEXTO PARA LAS SECCIONES DE CLASE CONTAINER ___________________________ */
+.content-text {
+    /* CAJA */
+    max-width: 550px;
+
+    /* CONTENIDO */
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMÁGENES GRANDES EN SECCIONES DE CLASE CONTAINER ________________________ */
+.content-image {
+    /* CAJA */
+    width: 100%;
+    max-width: 550px;
+}
+
+/* INICIAN SELECTORES DE ID DE SECCIONES ___________________________________ */
+#nosotros {
+    /* CAJA */
+    min-height: 40vh;
+    /* ESTILOS */
+    background-color: #eee;
+}
+
+#comedor {
+    /* ESTILOS */
+    background-color: #c9c5b5;
+}
+
+#living {
+    /* ESTILOS */
+    background-color: #eaecdf;
+}
+
+#living.container main  {
+/* MAIN DE SECCIONES CON FLEX INVERTIDO */
+    flex-direction: row-reverse;
+}
+
+
+#dormitorio {
+    /* ESTILOS */
+    background-color: #cec8ca;
+}
+
+#contacto {
+    /* CAJA */
+    padding-bottom: 2em;
+    /* ESTILOS */
+    background-color: #200403;
+    
+    /* TEXTOS */
+    font-variant: small-caps;
+    text-align: center;
+}
+
+/* INICIAN AJUSTES DE CAJAS Y CONTENIDOS EN LA SECCIÓN DE #CONTACTO _______ */
+#contacto header {
+    /* CAJA */
+    margin-bottom: 4em;
+
+    /* CONTENIDO */
+    flex-direction: column;
+}
+
+#contacto main, #contacto aside {
+    /* CAJA */
+    align-items: unset; /* EN #CONTACTO NO QUEDA BIEN EL ALINEADO VERT. */
+    width: 92vw;
+}
+
+#contacto figure {
+    /* CONTENIDO */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* TEXTOS */
+    font-variant: normal;
+    font-size: x-large;
+}
+
+#contacto img {
+    /* ESTILOS */
+    background-color: unset;
+    border-radius: unset;
+}
+
+#contacto aside {
+    /* CAJA */
+    max-width: 550px;
+}
+
+#contacto aside h2 {
+    /* CAJA */
+    padding: unset;
+    /* TEXTOS */
+    text-align: left;
+}
+
+/* INICIAN SELECTORES EN EL FORMULARIO ___________________________________ */
+#contacto form {
+    /* TEXTOS */
+    text-align: center;
+}
+
+#contacto form input {
+    /* CAJA */
+    width: 90%;
+    height: 3em;
+    margin: 1em auto;
+    
+    /* CONTENIDO */
+    display: block;
+}
+
+#contacto textarea {
+    /* CAJA */
+    width: 90%;
+    min-height: 9em;
+    max-height: 60vh;
+    resize: vertical;
+}
+
+
+/* MEDIA QUERY PARA ANCHO EXTRA PEQUEÑO (MENOS DE 280PX) */
+@media (max-width:280px) {
+    
+    body {
+        /* TEXTOS */
+        font-size: x-small;
+    }
+
+    .header-logo {
+        /* CAJA */
+        padding: .8em 1em;
+        /* TEXTOS */
+        font-size: small;
+        writing-mode: vertical-lr; /* Parche para Chrome */
+        writing-mode: sideways-lr; /* Preferible: funciona en firefox */
+    }
+
+    #portada div {
+        /* CAJA */
+        margin-top: 80px;
+    }
+
+    #portada div h1 {
+        /* ESTILOS */
+        text-shadow: 1px 1px 2px #000;
+        /* TEXTOS */
+        font-size:15vw;
+    }
+
+    .container h2 {
+        /* TEXTOS */
+        font-size:8vw;
+    }
+
+    #contacto figure {
+        font-size:6vw;
+    }
+
+    .content-icon {
+        /* CAJA */
+        height: 25px;
+        width: 25px;
+    }
+
+    div button {
+        /* TEXTOS */
+        font-size:6vw;
+    }
+
+}
